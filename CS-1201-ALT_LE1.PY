@@ -304,12 +304,14 @@ def menu():
             elif choice == "2":
                 userlog()
             elif choice == "3":
-                userlog()
-            elif choice == "4":
-                break
+                print("Exiting the program...")
+                break 
+            else:
+                print("Invalid input. Please choose a valid option.")
+                input("Press Enter to continue...")
         except ValueError:
             print("Invalid Input")
-            print("Enter to continue")
+            print("Press Enter to continue")
             input()
 
 def user_menu(username):
