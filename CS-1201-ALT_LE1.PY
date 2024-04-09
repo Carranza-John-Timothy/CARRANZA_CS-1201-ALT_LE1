@@ -235,7 +235,7 @@ def flashcards(username):
                     print("Available Topics:")
                     for topic in topics:
                         print("-", topic)
-                    input("\nPress Enter to continue...")
+                        input("\nPress Enter to continue...")
                 else:
                     print("No topics available.")
                     input("\nPress Enter to continue...")
@@ -270,7 +270,7 @@ def flashcards(username):
                                 input("Press Enter to continue...")
                         else:
                             print("No flashcards available for this topic.")
-                        input("\nPress Enter to continue...")
+                            input("\nPress Enter to continue...")
                     else:
                         print("Invalid topic name.")
                         input("\nPress Enter to continue...")
