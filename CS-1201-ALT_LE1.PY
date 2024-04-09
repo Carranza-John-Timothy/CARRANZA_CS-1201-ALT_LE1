@@ -92,7 +92,7 @@ def calc(username):
 
 def taskM(username, tasks):
     while True:
-        clear_screen()  # Clear the screen at the beginning of the loop
+        clear_screen()  
         try:
             print("\nTASK MANAGER")
             print("1. Add Task")
@@ -106,16 +106,16 @@ def taskM(username, tasks):
                 task = input("Enter the task: ")
                 tasks.append(task)
                 print("Task added successfully.")
-                input("Press Enter to continue...")  # Add a pause before clearing
+                input("Press Enter to continue...")  
             elif choice == "2":
-                clear_screen()  # Clear the screen before displaying tasks
+                clear_screen()  
                 if tasks:
                     print("Your tasks:")
                     for index, task in enumerate(tasks, start=1):
                         print(f"{index}. {task}")
                 else:
                     print("No tasks available.")
-                input("Press Enter to continue...")  # Add a pause
+                input("Press Enter to continue...")  
             elif choice == "3":
                 if tasks:
                     print("Your tasks:")
@@ -129,7 +129,7 @@ def taskM(username, tasks):
                         print("Invalid task number.")
                 else:
                     print("No tasks available to delete.")
-                input("Press Enter to continue...")  # Add a pause
+                input("Press Enter to continue...")  
             elif choice == "4":
                 print("Going back to the main menu...")
                 break
@@ -332,7 +332,7 @@ def user_menu(username):
             if choice == "1":
                 calc(username)
             elif choice == "2":
-                taskM(username, tasks)  # Pass tasks list to taskM
+                taskM(username, tasks)  
             elif choice == "3":
                 notepad(username)
             elif choice == "4":
