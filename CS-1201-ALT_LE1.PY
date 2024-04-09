@@ -227,7 +227,7 @@ def flashcards(username):
                     answer = input("Enter the answer: ")
                     topics[topic_name].append((question, answer))
                     print("Card added successfully.")
-                input("\nPress Enter to continue...")
+                    input("\nPress Enter to continue...")
             elif choice == "2":
                 clear_screen()
                 print("FLASHCARDS - View Topics\n")
@@ -270,7 +270,7 @@ def flashcards(username):
                                 input("Press Enter to continue...")
                         else:
                             print("No flashcards available for this topic.")
-                        input("\nPress Enter to continue...")
+                            input("\nPress Enter to continue...")
                     else:
                         print("Invalid topic name.")
                         input("\nPress Enter to continue...")
